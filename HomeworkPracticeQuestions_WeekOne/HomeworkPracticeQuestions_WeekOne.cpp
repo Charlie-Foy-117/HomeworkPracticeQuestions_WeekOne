@@ -21,6 +21,7 @@ int main()
 
 
     //problem two : Time Conversion
+    /*
     float hours;
     float minutes;
     float seconds;
@@ -58,12 +59,53 @@ int main()
             << "Minutes " << minutes << std::endl
             << "Seconds " << seconds << std::endl;
     }
-    else
+    else if (choice != "h" || choice != "m" || choice != "s")
     {
         std::cout << "You did not pick a compatible option please try again" << std::endl;
     }
+    */
     
+
+    //problem three : Insult Generator
+    /*
+    std::string insultWord = " new light";
+    std::string preInsult = "You are a";
+    std::string insult = preInsult + insultWord;
+
+    std::cout << insult << std::endl;
+    */
     
+
+
+    //problem four : Code Word Locatoer
+    /*
+    std::string codeword = "codeword";
+    std::string sentence = "This sentence contains a codeword somewhere within";
+    std::size_t locator = sentence.find(codeword);
+    std::size_t size = codeword.length();
+    sentence = sentence.substr(locator, size);
+    std::cout << sentence << std::endl;
+    */
+
+
+    //problem five : Date of Birth
+
+    std::string month, day, year;
+
+    std::cout << "Enter they year you were born" << std::endl;
+    std::cin >> year;
+    std::cout << "Enter the month you were born in" << std::endl;
+    std::cin >> month;
+    std::cout << "Enter the day of the month you were born on" << std::endl;
+    std::cin >> day;
+
+    std::string dOB = day + " " + month + " " + year;
+
+    std::cout <<"Your date of birth is " << dOB << std::endl;
+
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
