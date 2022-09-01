@@ -2,10 +2,12 @@
 //
 
 #include <iostream>
+#include <string>
 
 int main()
 {
     //problem one : Area of a rectangle
+    /*
     int length, width, area;
 
     std::cout << "Please enter the length of the rectangle" << std::endl;
@@ -15,7 +17,52 @@ int main()
     area = length * width;
     std::cout << "The area of the rectangle is " << area << std::endl;
 
+    */
+
+
     //problem two : Time Conversion
+    float hours;
+    float minutes;
+    float seconds;
+    std::string choice;
+
+    std::cout << "Would you like to convert hours(h), minutes(m) or seconds(s)" << std::endl;
+    std::cin >> choice;
+    if (choice == "h")
+    {
+        std::cout << "Enter the number of hours you wish to convert" << std::endl;
+        std::cin >> hours;
+        minutes = hours * 60;
+        seconds = hours * 360;
+        std::cout << "Hours " << hours << std::endl
+            << "Minutes " << minutes << std::endl
+            << "Seconds " << seconds << std::endl;
+    }
+    if (choice == "m")
+    {
+        std::cout << "Enter the number of minutes you wish to convert" << std::endl;
+        std::cin >> minutes;
+        hours = minutes / 60;
+        seconds = minutes * 60;
+        std::cout << "Hours " << hours << std::endl
+            << "Minutes " << minutes << std::endl
+            << "Seconds " << seconds << std::endl;
+    }
+    if (choice == "s")
+    {
+        std::cout << "Enter the number of seconds you wish to convert" << std::endl;
+        std::cin >> seconds;
+        minutes = seconds / 60;
+        hours = seconds / 360;
+        std::cout << "Hours " << hours << std::endl
+            << "Minutes " << minutes << std::endl
+            << "Seconds " << seconds << std::endl;
+    }
+    else
+    {
+        std::cout << "You did not pick a compatible option please try again" << std::endl;
+    }
+    
     
 }
 
